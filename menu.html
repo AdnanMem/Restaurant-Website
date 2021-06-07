@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+  />
+</head>
+
+
+<!-- CSS -->
+
+<style>
+    
+.title{
+margin-top: 50px;
+text-align:center;
+font-size:2rem;
+font-family: 'Dancing Script', cursive;  
+margin-left:auto;
+margin-right:auto;
+width:100%;   
+}
+
+.underline{
+margin:0 auto;
+border:2px solid #cc7722;
+width:50%;
+margin-top:-40px;
+}
+
+.menu{
+max-width:80%;
+margin:30px auto;
+}
+
+.menu-item img{
+display: block;
+max-width:100%;
+height:auto;
+border-radius: 5px;
+cursor:pointer;
+transition:all 0.3s ease;
+border:2px solid #cc7722;
+}
+
+.menu-item img:hover{
+transform: scale(1.1);
+}
+
+header{
+display:flex;
+justify-content: space-around;
+align-items: center;
+border-bottom:2px dotted #cc7722;
+margin-left:20px;
+margin-right:20px;
+}
+
+p{
+text-align: justify;
+margin:10px auto;
+margin-left:20px;
+margin-right:20px;   
+}
+
+.section-center{
+margin:50px auto;
+max-width:100%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 10px;
+}
+
+.menu-item{
+max-width:100%;
+flex:1;
+}
+
+.mjau{
+display:flex;
+align-items: center;
+justify-content:center;
+max-width:100%;
+border-radius: 5px;
+padding:10px;
+margin:0 auto;
+color:black;
+flex-direction:column;
+}
+
+.btn-container{
+text-align: center;
+margin:30px auto;
+max-width:350px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.btn-container button{
+padding:8px;
+width:100px;
+margin:8px;
+text-transform: uppercase;
+border:2px solid black;
+background-color: white;
+color:black;
+transition: all 0.3s ease;
+cursor:pointer;
+border-radius:8px;  
+}
+
+.btn-container button:hover{
+border:2px solid #cc7722;
+background-color: #cc7722;
+color:white;
+}
+
+#backbtn{
+padding:10px;
+border-radius:5px;
+background:#cc7722;
+outline:none;
+transition:all 0.3s ease;
+color:white;
+margin:0 auto;
+text-decoration: none;
+position:fixed;
+top:3%;
+left:3%;
+}
+
+#backbtn:hover{
+border:2px solid #cc7722;
+background:white;
+color:#cc7722;
+cursor:pointer;
+}
+
+body{
+background: url(./menu-img/pexels-lukas-349610.jpg);
+background-size:cover;
+background-position:fixed;
+background-repeat: no-repeat;
+background-attachment: fixed;
+height:100vh;
+width:100%;
+margin:0;
+box-sizing:border-box;
+}
+
+.ccc{
+text-align:center;
+margin:0 auto;
+width:100%;
+}
+
+#bbb{
+color:black;
+font-family: 'Dancing Script', cursive;  
+}
+
+#bbb span{
+padding-right:10px;  
+}
+
+.item-info{
+max-width:100%;
+flex:1;
+}
+
+
+
+@media screen and (max-width:640px){
+
+.btn-container{
+text-align: center;
+margin:30px auto;
+max-width:300px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.btn-container button{
+padding:8px;
+width:100px;
+margin:6px;
+text-transform: uppercase;
+border:2px solid black;
+background-color: white;
+color:black;
+transition: all 0.3s ease;
+cursor:pointer;
+border-radius:8px;
+}
+
+.section-center{
+margin:50px auto;
+max-width:80vw;
+display: flex;
+flex-direction:column;
+}
+
+.mjau{
+display:flex;
+flex-direction:column;
+margin:0 auto;
+max-width:100%;
+box-sizing:border-box;
+}
+
+.item-info{
+width:100%;
+box-sizing:border-box;
+margin:0 auto;
+height:fit-content;
+}
+
+.menu-item{
+max-width:100%;
+box-sizing:border-box;
+margin:0 auto;
+}
+
+.item-info p{
+  max-width:fit-content;
+  padding:20px;
+  height:fit-content;
+}
+
+}
+
+</style>
+
+<body>
+  
+<div class="ccc"><h1 id="bbb"><span><i class="fas fa-utensils"></i></span>Restaurant</h1></div>
+      
+<div class="title">
+<h1>Menu</h1>
+<div class="underline"></div>
+</div>
+
+
+<section class="menu">
+
+<div class="btn-container">
+</div>
+        
+<div class="section-center">
+        
+    <div class="mjau"> 
+
+    <article class="menu-item"> 
+     <img src="" class="photo" alt="">   
+    </article> 
+        
+    <div class="item-info">
+        <header>
+          <h4>Sigerica</h4>
+          <h4 class="price" >20$</h4>
+        </header>
+        <p class="item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sunt sed cupiditate ipsum neque eveniet esse, totam illum temporibus nobis.</p> 
+   </div>
+           
+   </div>
+        
+        
+   <div class="mjau"> 
+
+    <article class="menu-item"> 
+     <img src="" class="photo" alt="">   
+    </article> 
+        
+    <div class="item-info">
+        <header>
+          <h4>Sigerica</h4>
+          <h4 class="price" >20$</h4>
+        </header>
+        <p class="item-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio sunt sed cupiditate ipsum neque eveniet esse, totam illum temporibus nobis.</p> 
+   </div>
+           
+   </div>
+        
+  </div>
+        
+  </section>
+
+<a href="#" onclick="location.reload();location.href='file:///C:/Users/PC/Desktop/Projekti/Restaurant/index.html'; return false";><button id="backbtn">Go back</button></a>  
+
+<!----------------------------------------------- JAVASCRIPT --------------------------------------------->
+    
+    <script>
+
+javascript:(function(d){var w=d.documentElement.offsetWidth,t=d.createTreeWalker(d.body,NodeFilter.SHOW_ELEMENT),b;while(t.nextNode()){b=t.currentNode.getBoundingClientRect();if(b.right>w||b.left<0){t.currentNode.style.setProperty('outline','5px solid red','important');console.log(t.currentNode);}};}(document));
+
+
+const menu = [
+  {
+    id: 1,
+    title: "Scrambled Eggs",
+    category: "breakfast",
+    price: `5.00 $`,
+    img: "./menu-img/img1.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 2,
+    title: "Beefsteak",
+    category: "lunch",
+    price: `40.00 $`,
+    img: "./menu-img/img2.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 3,
+    title: "Pasta",
+    category: "dinner",
+    price: `20.00 $`,
+    img: "./menu-img/img3.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 4,
+    title: "Pancakes",
+    category: "breakfast",
+    price: `10.00 $`,
+    img: "./menu-img/img4.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 5,
+    title: "Pizza",
+    category: "lunch",
+    price: `12.00 $`,
+    img: "./menu-img/img5.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 6,
+    title: "Lasagne",
+    category: "dinner",
+    price: `22.00 $`,
+    img: "./menu-img/img6.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 7,
+    title: "Club Sandwich",
+    category: "breakfast",
+    price: `15.00 $`,
+    img: "./menu-img/img7.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 8,
+    title: "Chicken Nuggets",
+    category: "lunch",
+    price: `18.00 $`,
+    img: "./menu-img/img8.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 9,
+    title: "Shrimps",
+    category: "dinner",
+    price: `50.00 $`,
+    img: "./menu-img/img9.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+  {
+    id: 10,
+    title: "Cheesecake",
+    category: "sweets",
+    price: `12.00 $`,
+    img: "./menu-img/img10.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+
+  {
+    id: 11,
+    title: "Hot Chocolate",
+    category: "drinks",
+    price: `3.00 $`,
+    img: "./menu-img/img11.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+
+  {
+    id: 12,
+    title: "Squeezed orange",
+    category: "drinks",
+    price: `4.00 $`,
+    img: "./menu-img/img12.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+
+  {
+    id: 13,
+    title: "Fresh lemonade",
+    category: "drinks",
+    price: `8.00 $`,
+    img: "./menu-img/img13.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+
+  {
+    id: 14,
+    title: "Muffins",
+    category: "sweets",
+    price: `10.00 $`,
+    img: "./menu-img/img14.jpg",
+    desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio iure assumenda porro, at aut!`,
+  },
+];
+
+
+const sectionCenter=document.querySelector('.section-center');
+const container =document.querySelector('.btn-container');
+
+window.addEventListener('DOMContentLoaded', function(){
+
+displayMenuItems(menu);
+displayMenuButtons();
+
+});
+
+
+function displayMenuItems(x){
+
+let displayMenu = x.map(function(item){
+    return `<div class="mjau">
+    
+    <article class="menu-item">
+    
+     <img src=${item.img} class="photo" alt="">
+    
+    </article> 
+    
+     <div class="item-info">
+    
+    <header>
+        <h4>${item.title}</h4>
+        <h4 class="price" >${item.price}</h4>
+    </header>
+           <p class="item-text">${item.desc}</p> 
+    
+        </div>
+       
+    </div>`;
+    
+    });
+    displayMenu=displayMenu.join('');  
+    sectionCenter.innerHTML=displayMenu;
+}
+
+
+
+function displayMenuButtons(){
+const categories=menu.reduce(function(values, item){
+  if(!values.includes(item.category)){
+    values.push(item.category);
+  }
+  
+  return values
+},['all']);
+
+
+
+const categoryBtns=categories.map(function(category){
+  return `<button class="filter-btn" data-id=${category}>${category}</button>`
+}).join("");
+
+container.innerHTML=categoryBtns;
+const filterBtns=container.querySelectorAll('.filter-btn');
+filterBtns.forEach(function(btn){
+
+  btn.addEventListener('click', function(e){
+
+      const category=e.currentTarget.dataset.id;
+
+const menuCategory=menu.filter(function(menuItem){
+  if(menuItem.category===category){
+      return menuItem;
+  }
+  
+});
+
+if(category==='all'){
+  displayMenuItems(menu)
+} 
+else{
+  displayMenuItems(menuCategory)
+}
+
+  });
+});
+}
+
+</script>
+</body>
+</html>

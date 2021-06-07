@@ -1,0 +1,1057 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+/* Floating food animation ...................................................................................... */
+
+
+.burgers{
+position:fixed;
+bottom:-50px;
+display:flex;
+width:100%;
+justify-content: space-around;
+z-index:4;   
+}
+
+
+.burgers .icon{
+color:#cc7722;   
+}
+
+.burgers .icon i{
+font-size:2.5rem;   
+}
+
+.float{
+animation: move 4s linear 1;
+}
+
+
+#icon1{
+   animation-delay: 2s;
+} #icon2{
+    animation-delay: 1s;
+ }#icon3{
+    animation-delay: 0;
+ }#icon4{
+    animation-delay: 3s;
+ }#icon5{
+    animation-delay:0.5s;
+ }#icon6{
+    animation-delay:1.5s;
+ }#icon7{
+    animation-delay: 2.3s;
+ }#icon8{
+    animation-delay: 3.1s;
+ }#icon9{
+    animation-delay: 1.8s;
+ }#icon10{
+    animation-delay: 2.5s;
+ }
+
+
+@keyframes move{
+
+0%{
+    transform:translateY(0);
+    opacity:0;
+}
+50%{
+    opacity:1;
+}
+70%{
+    opacity:1;
+}
+100%{
+    transform:translateY(-90vh);
+    opacity:0;
+}
+}
+
+
+/* Home section (beginning) ...................................................................................... */
+
+
+#banner{
+background: linear-gradient(rgba(0,0,0,0.5), black), url(./Images/back2.jpg);
+background-size:cover;
+background-position:fixed;
+background-repeat: no-repeat;
+height:100vh;    
+}
+
+#bbb{
+color:white;
+font-family: 'Dancing Script', cursive;  
+}
+
+#banner h1 span{
+margin-right:10px;
+}
+
+.navbar{
+display:flex;
+align-items:center;
+justify-content: space-between;
+height:100px;    
+}
+
+.sideNav ul{
+display:block;
+margin:auto;   
+}
+
+.sideNav{
+margin-right:20px;  
+}
+
+.ccc{
+margin-left:40px;
+}
+
+.sideNav ul li{
+display:inline;
+color:white;
+text-decoration: none;
+transition:all 0.5s ease;
+}
+
+.sideNav ul li:hover{    
+text-decoration: underline;
+}
+
+nav ul li{
+list-style: none;
+margin:50px 20px;
+font-family: 'Orelega One', cursive;
+font-size:20px;
+font-weight: lighter;
+cursor:pointer;   
+}
+
+nav ul li a{
+text-decoration: none;
+color:white;   
+}
+
+.color{
+color:black;   
+}
+
+.fun{
+    right:0;
+}
+
+.disappear{
+    right:0;
+}
+
+/* Home section (center) ...................................................................................... */
+
+
+.mjau{
+width: fit-content;
+margin:150px auto;
+text-align:center;
+font-family: 'Dancing Script', cursive;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position:relative; 
+color:white;
+}
+
+.mjau h1{
+font-size:100px;
+}
+
+.mjau p{
+font-size:20px;
+font-style: italic;
+letter-spacing: 1rem;
+font-family: 'Dancing Script', cursive;
+}
+
+.links{
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.links a{
+text-decoration: none;
+color:white;
+border:0.5px solid white;
+padding:10px 20px;
+width:150px;
+margin:5px;
+font-family: 'Orelega One', cursive;
+letter-spacing: 3px;
+font-size: 16px;
+position:relative;
+z-index: 1;
+}
+
+.links a span{
+width:0;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+background:white;
+z-index: -1;
+transition:0.5s ease;
+}
+
+.links a:hover span{
+width:100%;
+}
+
+.links a:hover{
+color:black;
+}
+
+
+/* Modal ...................................................................................... */
+
+
+.modal{
+position:fixed;
+top:25%;
+right:25%;
+bottom:25%;
+left:25%;
+background:white;
+color:black;
+z-index:3;
+max-width:100%;
+max-height:100%;
+visibility:hidden;
+
+background:linear-gradient(rgba(0,0,0,0.3), black), url(./pexels-karolina-grabowska-4199098.jpg);
+background-size:cover;
+background-position:fixed;
+background-repeat: no-repeat;
+box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+}
+
+#modall{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+letter-spacing:normal;
+text-align:center;
+margin-top:50px;
+color:white;
+font-weight:bolder;
+text-shadow: 4px 3px 0 black;
+}
+
+.modal i{
+font-size:30px;
+cursor:pointer;
+position:absolute;
+top: 10px;
+right:15px;
+}
+
+.bestfood{
+display:flex;
+align-items:center;
+justify-content: space-around;
+margin-top:40px;
+}
+
+.cube{
+width:20%;
+height:20%;
+color:white;
+}
+
+#closemodal{
+transition:all ease;
+outline:none;
+padding:0;
+}
+
+
+#closemodal:hover{
+color:white;
+background:transparent;
+outline:none;
+}
+
+.cube span{
+color:red;
+font-weight: bolder;
+}
+
+.show{
+visibility:visible;
+}
+
+
+/* Burger (for mobile version) ...................................................................................... */
+
+
+.menuBtn{
+width:50px;
+height:50px;
+background:transparent;
+text-align: center;
+position:fixed;
+right:-10px;
+top:25px;
+border-radius:3px;
+z-index:3;
+cursor:pointer;
+color:#cc7722;
+display:none;  
+}
+
+.menuBtn span{
+width:25px;
+height:30px;
+display:none;
+}
+
+.menu i {
+font-size:25px;
+padding:5px;
+font-weight: bolder; 
+display:none;
+}
+
+
+/* Discover section ...................................................................................... */
+
+
+#discover{
+width:100%;
+padding:70px 0;
+}
+
+.title-text{
+text-align: center;
+padding-bottom:70px;
+}
+
+.title-text p{
+margin:auto;
+font-size:20px;
+font-weight:bold;
+color:#cc7722;
+position:relative;
+z-index:1;
+display:inline-block;
+font-weight:bolder;
+}
+
+.title-text h1{
+font-size:50px;
+}
+
+.discover-box{
+width:80%;
+margin:auto;
+display:flex;
+align-items: center;
+text-align:center;
+flex-wrap: wrap;
+}
+
+.discover1{
+flex-basis:50%;
+}
+
+.discover-img{
+flex-basis:50%;
+margin:auto;   
+}
+
+.discover-img img{
+width:70%;
+border-radius:15px;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.discover-img img:hover{
+transform: scale(1.1);
+}
+
+.discover h1{
+text-align:left;
+margin-bottom:10px;
+font-weight:200;
+color:#cc7722;
+}
+
+.discover-desc{
+ display:flex;
+ align-items: center;  
+ margin-bottom:40px; 
+}
+
+.discover-icon i{
+width:50px;
+height:50px;
+font-size:30px;
+line-height: 50px; 
+border-radius:6px;
+color:#cc7722;
+border:1px solid #cc7722;
+}
+
+.discover-text p{
+padding:0px 20px;
+text-align: initial;
+}
+
+
+/* Services section ...................................................................................... */
+
+
+#service{
+width:100%;
+padding:70px 0;
+background:#efefef;
+}
+    
+.service-box{
+width:80%;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+margin:auto;
+}
+    
+.single-service{
+flex-basis: 48%;
+text-align:center;
+border-radius:7px;
+margin-bottom:20px;
+color:white;
+position:relative;
+}
+    
+.single-service img{
+width:100%;
+border-radius:8px;
+}
+ 
+.overlay{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+border-radius:8px;
+cursor:pointer;
+background:linear-gradient(rgba(0,0,0,0.7), #cc7722);
+opacity:0;
+transition:all 1s ease;
+}
+    
+.single-service:hover .overlay{
+opacity:1;
+}
+
+.service-desc{
+width:80%;
+position:absolute;
+bottom:0;
+left:50%;
+transform:translateX(-50%);
+opacity:0;
+transition:all 1s ease;
+}
+    
+hr{
+height:2px;
+width:50%;
+margin:10px auto;
+}
+    
+.service-desc p{
+font-size:15px;
+}
+    
+.single-service:hover .service-desc{
+bottom:30%;
+opacity:1;
+}
+
+
+/* Menu section ...................................................................................... */
+
+
+#menu{
+width:100%;
+padding:70px 0;
+margin:0 auto;
+}
+
+.food-container{
+width:80%;
+margin:0 auto;
+}
+
+
+.food-box{
+display:flex;
+align-items:center;
+justify-content: space-between;
+margin-bottom:50px;
+}
+
+.text{
+text-align:center;
+flex:1;
+}
+
+.pic{
+flex:1;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.pic:hover{
+transform: scale(1.1);
+}
+
+.text p{
+text-align:justify;
+}
+
+
+.food-container img{
+display:block;
+border-radius:7px;
+}
+
+#first{
+flex-direction: row-reverse;
+}
+
+#third{
+flex-direction: row-reverse;
+}
+
+#first img{
+float:left; 
+}
+
+
+#second img{
+float:right; 
+}
+
+#third img{
+float:left; 
+}
+
+#menu-click{
+text-align:center;
+}
+
+#menu-click button{
+padding:10px;
+border-radius:5px;
+background:#cc7722;
+outline:none;
+transition:all 0.3s ease;
+color:white;
+}
+
+#menu-click button:hover{
+border:2px solid #cc7722;
+background:transparent;
+color:#cc7722;
+cursor:pointer;
+}
+
+
+/* About us section ...................................................................................... */
+
+
+#about-us{
+padding:100px 0 20px;
+background:#efefef;
+}
+
+.about-row{
+width:80%;
+margin:0 auto;
+display:flex;
+justify-content: space-between;
+flex-wrap:wrap;
+}
+
+.about-left, .about-right{
+flex-basis:45%;
+padding:10px;
+margin-bottom:20px;
+text-align:justify;
+}
+
+.about-left ul, .about-right ul{
+list-style-type: none;
+padding:0;
+}
+
+.about-left h1, .about-right h1{
+text-align:center;
+}
+
+.about-row h1{
+margin:10px 0;
+}
+
+.about-row p{
+line-height: 25px;
+}
+
+.about-right i{
+font-size:20px;
+padding-left:15px;
+color:#cc7722;
+}
+
+
+/* Contact section ......................................................................................*/
+
+
+.contact{
+padding:100px 0 20px;
+background:white;
+width:80%;
+margin:0 auto;
+}
+
+.contactDiv{
+display:flex;
+align-items:center;
+justify-content: space-between;
+}
+
+.contact1, .contact2, .contact3{
+flex-basis:30%;
+}
+
+.contact1 h2{
+text-align:center;
+}
+
+.arrow i{
+font-size:40px;
+text-align:center;
+margin-top:20px;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.arrow i:hover{
+color:#cc7722;
+}
+
+.arrow{
+margin:0 auto;
+text-align:center;
+}
+
+.contact2{
+text-align:center;
+}
+
+#icons i{
+color:#cc7722;
+}
+.social{
+text-align:center;
+}
+
+.social i{
+height:35px;
+width:35px;
+font-size:25px;
+border:2px solid #cc7722;
+margin:40px 5px 0;
+color:#cc7722;
+cursor:pointer;
+transition:all 0.3s ease;
+}
+
+.social i:hover{
+background:#cc7722;
+color:white;
+transform:translateY(-5px);
+}
+
+
+/* --------------------------------- MEDIA QUERY ------------------------------------------------------ */
+
+
+@media screen and (max-width:920px){
+
+/* Home section (beginning) */
+
+.ccc{
+    position:absolute;
+    right:30px;
+    left:25px;
+    }
+    
+    .sideNav{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:100%;
+    visibility:visible;
+    transition:all 0.5s ease;
+    background:#cc7722;
+    height:100%;
+    z-index:2;
+    margin-right:0;
+    }
+    
+    nav ul{
+    padding-left:70px;
+    padding-top:70px;
+    }
+    
+    nav ul li a{
+    padding-bottom:20px;
+    display:block;
+    margin:auto;
+    text-decoration: none;
+    color:white;
+    transition: all 0.5s ease;
+    }
+    
+    nav ul li{
+    list-style: none;
+    margin:50px 20px;
+    font-family: 'Orelega One', cursive;
+    font-size:20px;
+    font-weight: lighter;
+    cursor:pointer;
+    transition: all 0.5s;
+    width:100%;   
+    }
+        
+    nav ul li:hover #r{
+    color:black;
+    transform: translateX(30%);
+    }
+
+.color{
+color:black;   
+}
+        
+.fun{
+right:0;
+}
+        
+.disappear{
+right:0;
+}
+/* Home section (center) */
+
+.mjau h1{
+font-size:40px;
+}
+
+.links a{
+display:block;
+margin:20px auto;
+}
+   
+.links{
+display:flex;
+align-items: center;
+justify-content:space-evenly;
+flex-direction: column;
+}
+
+#mdclick{
+margin-top:-10px;
+}
+
+/* Modal */
+
+.bestfood{
+display:flex;
+align-items:center;
+justify-content: space-around;
+margin-top:30px;
+flex-direction: column;
+max-height: 100%;
+}
+
+.cube{
+width:100%;
+height:auto;
+margin-bottom:20px;
+text-align:justify;
+padding:5px 20px;
+color:white;
+}
+
+.modal{
+position:fixed;
+top:25%;
+right:25%;
+bottom:25%;
+left:25%;
+color:black;
+z-index:3;
+max-height:fit-content;
+
+background:linear-gradient(rgba(0,0,0,0.3), black), url(./pexels-karolina-grabowska-4199098.jpg);
+background-size:cover;
+background-position:fixed;
+background-repeat: no-repeat;
+background-attachment:scroll;
+box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);  
+}
+
+/* Burger (for mobile version) */
+
+.menuBtn{
+display:block;
+}
+    
+.menuBtn span{
+display:block;
+}
+
+.menu i {
+display:block;
+}
+
+/* Discover section */
+   
+.title-text h1{
+font-size:35px;
+}
+
+.discover1{
+flex-basis:100%;
+}
+
+.discover-img{
+flex-basis:100%;   
+}
+
+.discover-img img{
+width:100%;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.discover-img img:hover{
+transform: scale(1.1);
+}
+}   
+
+
+ @media screen and (max-width:770px){
+
+/* Services section */
+
+.single-service{
+flex-basis:100%;
+}
+
+.service-desc p{
+ font-size:12px;
+}
+
+.single-service:hover .service-desc{
+bottom:30%;
+}
+}
+
+ 
+@media screen and (max-width:1200px){
+
+/* Menu section */
+
+.food-container{
+display:flex;
+align-items:center;
+flex-direction:column;
+justify-content: space-between;
+width:100%; 
+}
+
+.food-box{
+display:flex;
+align-items:center;
+justify-content: space-between;
+flex-direction:column;
+width:80%;
+}
+
+#first{
+flex-direction:column;
+}
+
+#second{
+flex-direction: column;
+}
+
+#third{
+flex-direction:column;
+}
+
+.food-box p{
+margin-bottom:25px;
+}
+
+.text{
+width:100%;    
+}
+
+.pic{
+width:100%;
+transition:all 0.3s ease;
+cursor:pointer;
+}
+
+.pic:hover{
+transform: scale(1.1);
+}
+
+#first img{
+float:none;
+max-width: 100%;
+margin:0 auto;    
+}
+
+
+#second img{
+float:none; 
+max-width: 100%;
+margin:0 auto;
+}
+
+#third img{
+float:none; 
+max-width: 100%;
+margin:0 auto;
+}
+}
+
+/* About us section */
+
+@media screen and (max-width:770px){
+
+.about-left, .about-right{
+flex-basis:100%;
+}
+
+.about-right{
+text-align:left;
+}
+
+.about-left p, .about-right p{
+text-align:justify;
+}
+}
+
+
+/* Contact section */
+
+@media screen and (max-width:770px){
+
+.contactDiv{
+display:flex;
+align-items:center;
+justify-content: space-between;
+flex-direction: column;
+}  
+
+.contact2, .contact3{
+margin-top:50px;
+}
+
+.contact3{
+text-align:justify;
+}
+
+.contact1, .contact2, .contact3{
+margin-top:50px;
+}
+
+.contact{
+width:80%;
+margin:0 auto;
+}
+
+.contact2 #tt{
+text-align:justify;
+}
+
+#icons{
+margin-top:15px;
+}
+}
+
+
+@media screen and (max-width:750px){
+
+/* Home section (beginning) */
+
+.ccc{
+margin-left:0;
+margin-top:-20px;
+}
+
+/* Modal */
+
+.modal{
+position:fixed;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width:80%;
+}
+
+/* Discover section */
+
+.title-text h1{
+font-size:20px;
+}
+
+.discover1 h1{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.discover-desc{
+display:flex;
+justify-content: space-between;
+}
+
+.discover-text p{
+text-align:justify;}
+
+.discover-icon{
+flex:1;
+}
+
+.discover-text{
+flex:2;
+}
+
+/* Services section */
+
+.single-service:hover .service-desc{
+bottom:17%;
+opacity:1;
+}
+}
